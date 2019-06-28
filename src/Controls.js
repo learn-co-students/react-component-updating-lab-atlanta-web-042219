@@ -1,7 +1,6 @@
 import React, { PureComponent } from 'react';
 
 class Controls extends PureComponent {
-
   render() {
     return (
       <div>
@@ -14,7 +13,6 @@ class Controls extends PureComponent {
       </div>
     );
   }
-
 
 }
 

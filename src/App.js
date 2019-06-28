@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-
 import Timer from './Timer'
 import Controls from './Controls'
 
@@ -16,12 +15,16 @@ class App extends Component {
   }
 
   render() {
-    console.log(this.state.timerIDs);
+    console.log('this.state.timerIDs:', this.state.timerIDs);
     return (
       <div className="App">
         <header>
           <h1>MultiTimer</h1>
-          <Controls updateIntervalSetting={this.updateIntervalSetting} updateInterval={this.state.updateInterval} handleAddTimer={this.handleAddTimer}/>
+          <Controls 
+            updateIntervalSetting={this.updateIntervalSetting} 
+            updateInterval={this.state.updateInterval} 
+            handleAddTimer={this.handleAddTimer}
+          />
         </header>
         <div className="TimerGrid">
           {this.renderTimers()}
