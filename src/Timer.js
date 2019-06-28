@@ -14,6 +14,13 @@ class Timer extends Component {
 
 
   //Your code here
+  shouldComponentUpdate() {
+    console.log('should update')
+    return false
+  }
+  componentDidUpdate() {
+    console.log('did update')
+  }
 
 
 
